@@ -1,0 +1,24 @@
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #203a56;
+    display: flex;
+}
+
+.titulo {
+    color: beige;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.texto-nav {
+    color: beige;
+    position:relative;
+    top:4px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.collapse{
+    background-color: #203a56;
+}
