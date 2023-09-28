@@ -7,3 +7,6 @@ def home(request):
 
 def habitaciones(request):
     return render(request, 'app/habitaciones.html')
+
+def reserva(request):
+    return render(request, 'app/reserva.html')
