@@ -2,6 +2,9 @@
 {% load static %}
 {% block content %}
 
+  <link rel="Stylesheet" href="{% static 'css/home.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rubik&display=swap" rel="stylesheet">
+
   <!--Carrusel-->
 
   <div class="container-fluid">
@@ -15,18 +18,18 @@
       <div class="carousel-inner">
         <a href="">
         <div class="carousel-item active" data-bs-interval="10000" > 
-          <img  src=""  class="d-block w-100" alt="" height="500px">   
+          <img  src="{%static 'img/comedor.jpg'%}"  class="d-block w-100" alt="" height="500px">   
         </div>
         </a>
 
         <a href="">
         <div class="carousel-item" data-bs-interval="2000">
-          <img src=""  class="d-block w-100" alt="..." height="500px">
+          <img src="{%static 'img/habitacion.jpeg'%}"  class="d-block w-100" alt="..." height="500px">
         </div>
         </a>
         <a href="">
         <div class="carousel-item">
-          <img src=""  class="d-block w-100" alt="..." height="500px" >
+          <img src="{%static 'img/lobby.jpg'%}"  class="d-block w-100" alt="..." height="500px" >
         </div>
         </a>
 
@@ -88,8 +91,8 @@
           <div class="col-md-3">
             <div class="card mb-3">
               <div class="card-body">
-                <img class="card-img" src="{%static 'img/aaa.png'%}"  alt="...">
-                <h5 class="card-title">Special title treatment</h5>
+                <img class="card-img" src="{%static 'img/wifi.png'%}"  alt="...">
+                <h5 class="card-title">Wi-fi</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>   
@@ -98,8 +101,8 @@
           <div class="col-md-3">
             <div class="card mb-3">
               <div class="card-body">
-                <img class="card-img" src="{%static 'img/aaa.png'%}"  alt="...">
-                <h5 class="card-title">Special title treatment</h5>
+                <img class="card-img" src="{%static 'img/auto.png'%}"  alt="..." max-height="100px" ; max-width="200px";>
+                <h5 class="card-title">Estacionamiento</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>  
@@ -108,8 +111,8 @@
           <div class="col-md-3">
             <div class="card mb-3">
               <div class="card-body">
-                <img class="card-img" src="{%static 'img/aaa.png'%}"  alt="...">
-                <h5 class="card-title">Special title treatment</h5>
+                <img class="card-img" src="{%static 'img/comida.png'%}"  alt="...">
+                <h5 class="card-title">Desayuno</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>  
@@ -118,8 +121,8 @@
           <div class="col-md-3">
             <div class="card mb-3">
               <div class="card-body">
-                <img class="card-img" src="{%static 'img/aaa.png'%}"  alt="...">
-                <h5 class="card-title">Special title treatment</h5>
+                <img class="card-img" src="{%static 'img/nadador.png'%}"  alt="...">
+                <h5 class="card-title">Piscina</h5>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>  
@@ -129,16 +132,7 @@
     </div>    
   </div>
 
-  <footer>
-    <div class="footer">
-        <p>&copy; 2023 Mi Sitio Web</p>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Acerca de</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
-    </div>
-</footer>
+
 
 {% endblock %}
  

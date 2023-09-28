@@ -34,13 +34,13 @@
 }
 
 .card-img {
-    max-width: 390px;
+    max-width: 350px;
     position: start;
     display: grid;
 }
 
 .card-title{
-    color:#6c6a6a;
+    color:#292828;
     position: relative;
     font-family: Rubik;
     text-align: end;
@@ -62,14 +62,7 @@
     position: relative;
     font-family: Rubik;
     text-align: start;
-    top: -100px;
+    top: -110px;
 
 }
 
-.footer{
-    background: linear-gradient(rgb(53, 70, 86), rgba(53, 70, 86)), center/cover no-repeat;
-    text-decoration:none;
-    color: #fff;
-    padding: 20px 60px;
-    font-size: 20px;
-}
