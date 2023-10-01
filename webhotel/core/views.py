@@ -10,3 +10,6 @@ def habitaciones(request):
 
 def reserva(request):
     return render(request, 'app/reserva.html')
+
+def contacto(request):
+    return render(request, 'app/contacto.html')
