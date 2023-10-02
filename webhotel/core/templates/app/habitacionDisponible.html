@@ -7,12 +7,14 @@
   <div class="Habitaciones">
     <div Class="titulo_Habitaciones mb-5 text-center">
       <strong>
-        Habitaciones
+        Habitaciones Disponibles
       </strong>
     </div>
 
- {% load humanize %}
+      {% load humanize %}
       {% for x in habitaciones %}
+  
+        {% if x.nombreEstado.nombreEstado == "Disponible" %}
   
           <!-- Post Entry -->
               <div class="row pb-3">
@@ -36,7 +38,11 @@
                     
                   </div>
                 </div>
-
+  
+                  
+              
+          {% endif %}    
       {% endfor %}
+
 
 {% endblock %}

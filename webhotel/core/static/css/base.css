@@ -5,6 +5,11 @@
     display: flex;
 }
 
+.navbar-brand img{
+    width: 75px;
+    height: 60px;
+}
+
 .titulo {
     color: #fff;
     text-decoration: none;

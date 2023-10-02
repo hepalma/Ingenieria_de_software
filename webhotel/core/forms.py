@@ -1,9 +1,9 @@
 from django import forms
 from django.forms import ModelForm
-from .models import reserva
+from .models import cliente
 
-class ReservaForm(ModelForm):
+class ClienteForm(ModelForm):
 
     class Meta:
-        model = reserva
+        model = cliente
         fields = "__all__"

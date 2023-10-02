@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import habitacion
-from .forms import ReservaForm
+from .forms import ClienteForm
 # Create your views here.
 
 def home(request):
@@ -14,9 +14,9 @@ def habitaciones(request):
 
 
 def reserva(request):
-    data = { 'form': ReservaForm()}
+    data = { 'form': ClienteForm()}
     if request.method == 'POST':
-        formulario = ReservaForm(data=request.POST)
+        formulario = ClienteForm(data=request.POST)
         if formulario.is_valid():
             formulario.save()
             data ["mensaje"] = "Solicitud de reserva enviada."
@@ -27,3 +27,9 @@ def reserva(request):
 
 def contacto(request):
     return render(request, 'app/contacto.html')
+
+
+def habitacionDisponible(request):
+    habitaciones = habitacion.objects.all()
+    data = { 'habitaciones' : habitaciones}
+    return render(request, 'app/habitacionDisponible.html', data)

@@ -50,7 +50,7 @@
   <!-- Formulario-->
 
   <div class="book">
-    <form class="book-form">
+    <form class="book-form ms-center">
         <div class="form-item">
             <label for="checkin-date">Fecha de arribo: </label>
             <input type="date" id="checkin-date">
@@ -59,20 +59,12 @@
             <label for="checkout-date">Fecha de partida:</label>
             <input type="date" id="checkout-date">
         </div>
+ 
         <div class="form-item">
-            <label for="adult">Adultos:</label>
-            <input type="number" min="1" value="1" id="adult">
-        </div>
-        <div class="form-item">
-            <label for="children">Niños:</label>
-            <input type="number" min="0" value="0" id="children">
-        </div>
-        <div class="form-item">
-            <label for="rooms">Habitaciones:</label>
-            <input type="number" min="1" value="1" id="rooms">
-        </div>
-        <div class="form-item">
-            <input type="submit" class="btn" value="Buscar">
+          <a href="{% url 'habitacionDisponible' %}">
+            <input type="submit" class="btn" value="Buscar" >
+          </a>
+            
         </div>
     </form>
   </div>
