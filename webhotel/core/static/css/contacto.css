@@ -1,0 +1,16 @@
+.Contacto{
+    background: linear-gradient(rgb(255, 252, 252), rgba(255, 252, 252)), center/cover no-repeat;
+    color: #fff;
+    padding: 150px 60px;
+}
+
+.titulo_Contacto{
+    color: #6c6a6a;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Rubik;
+    text-align:start;
+    position:relative;
+    top:20px;
+    left:50px;
+}
