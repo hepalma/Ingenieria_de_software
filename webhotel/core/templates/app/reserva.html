@@ -8,31 +8,12 @@
 
     <div class="col-md-6 mb-5">
         <h1>Reserva </h1>
-        <form id="reservation-form ">
-            <label for="first-name">Nombre:</label>
-            <input type="text" id="first-name" name="first-name" required><br>
+        <form id="reservation-form " action="" method="post">
 
-            <label for="last-name">Apellido:</label>
-            <input type="text" id="last-name" name="last-name" required><br>
+            {% csrf_token %}
 
-            <label for="rut">Rut:</label>
-            <input type="text" id="rut" name="rut" required><br>
-
-            <label for="check-in">Fecha de llegada:</label>
-            <input type="date" id="check-in" name="check-in" required><br>
-
-            <label for="check-out">Fecha de salida:</label>
-            <input type="date" id="check-out" name="check-out" required><br>
-
-            <label for="guests">Número de huéspedes:</label>
-            <input type="number" id="guests" name="guests" required><br>
-        
-            <label for="room-type">Tipo de habitación:</label>
-            <select id="room-type" name="room-type" required>
-                <option value="individual">Individual</option>
-                <option value="doble">Doble</option>
-                <option value="suite">Suite</option>
-            </select><br>
+            {{ form }}
+            
 
             <input type="submit" value="Reservar">
         </form>
